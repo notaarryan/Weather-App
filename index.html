@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="card">
+        <div id="searchDiv">
+            <input type="text" name="search" id="search" placeholder="Enter name of city">
+            <button id="searchButton">
+            </button>
+        </div>
+        <div id="dataDiv">
+            <img src="images/clear.png" id="weatherIcon">
+            <p id="weatherInfo">22&deg; C</p>
+            <p id="cityName">New York</p>
+        </div>
+        <div id="otherInfo">
+            <div id="humidityDiv" class="div">
+                <img src="images/humidity.png" class="icon">
+                <div class="values">
+                    <p id="humidityInfo" class="info">64%</p>
+                    <p>Humidty</p>
+                </div>
+            </div>
+
+            <div id="windSpeedDiv" class="div">
+                <img src="images/wind.png" class="icon">
+                <div class="values">
+                    <p id="windInfo" class="info">18 km/h</p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
