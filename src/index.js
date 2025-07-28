@@ -25,6 +25,7 @@ class App {
       this.changeBackgroundModeBtnImage();
     });
 
+
     this.formInput.addEventListener("input", () => this.validateInput());
 
     this.form.addEventListener("submit", (e) => {
@@ -70,6 +71,7 @@ class App {
         }
       );
       const json = await response.json();
+      console.log(json.days);
       const city = this.titleCase(inputCity);
       const temp = Math.round(((parseInt(json.days[0].temp) - 32) * 5) / 9);
       const description = json.days[0].description;
@@ -117,7 +119,6 @@ class App {
   }
 
   validateInput() {
-    console.log(this.formInput.value);
     if (this.formInput.value === "" || this.formInput.value === null) {
       this.formInput.setCustomValidity("Please enter a city name");
     } else {

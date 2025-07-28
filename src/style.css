@@ -1,14 +1,15 @@
 :root {
     font-size: 16px;
+    font-family: "Lato", sans-serif;
     line-height: 1.5;
-    --background-gradient: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 42%, rgba(0, 212, 255, 1) 100%);
+    --background-gradient: #37474f;
     --main-content-container-background: rgba(0, 0, 0, 0.5);
     --main-content-container-font-color: white;
     --toggle-mode-btn-background-color: inherit;
 }
 
 :root.light {
-    --background-gradient: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(56, 56, 110, 1) 100%);
+    --background-gradient: #dee4e7;
     --main-content-container-background: rgba(255, 255, 255, 0.7);
     --main-content-container-font-color: #111;
     --toggle-mode-btn-background-color: inherit;
@@ -50,8 +51,6 @@ img {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    transition: background-color 0.3s ease;
-
 }
 
 input,
@@ -75,8 +74,7 @@ body {
     justify-content: center;
     align-items: center;
     background: var(--background-gradient);
-    transition: background-color 0.3s ease;
-
+    transition: background 0.3s ease;
 }
 
 div#main-content-container {
@@ -91,6 +89,7 @@ div#main-content-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
 }
 
 :root.light>div#main-content-container {
@@ -99,8 +98,8 @@ div#main-content-container {
 
 div#main-content-container>button#toggle-background-mode {
     position: absolute;
-    top: min(10px, 5vw);
-    right: min(10px, 5vw);
+    top: min(10px, 1vw);
+    right: min(10px, 1vw);
     border: none;
     width: min(40px, 10vw);
     height: min(40px, 10vw);
@@ -123,6 +122,7 @@ div#main-content-container>button#toggle-background-mode:active {
 }
 
 div#weather-app-card {
+    margin-top: 20px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -166,7 +166,7 @@ div#weather-app-card form {
 }
 
 div#weather-app-card input#weather-input {
-    flex: 1;
+    width: 100%;
     padding: 0.5rem 1rem 0.5rem 3rem;
     border: none;
     border-radius: 30px;
