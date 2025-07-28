@@ -37,7 +37,7 @@ Weather-App/
 
 ## 🌐 Live Demo
 
-Check out the live website here: [GitHub Pages link](https://notaarryan.github.io/Restaurant-Page/)  
+Check out the live website here: [GitHub Pages link](https://notaarryan.github.io/Weather-App/)  
 
 ## 📌 What I Learned
 
