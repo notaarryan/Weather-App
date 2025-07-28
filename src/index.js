@@ -25,7 +25,6 @@ class App {
       this.changeBackgroundModeBtnImage();
     });
 
-
     this.formInput.addEventListener("input", () => this.validateInput());
 
     this.form.addEventListener("submit", (e) => {
@@ -71,8 +70,8 @@ class App {
         }
       );
       const json = await response.json();
-      console.log(json.days);
-      const city = this.titleCase(inputCity);
+      console.log(json);
+      const city = this.titleCase(json.resolvedAddress);
       const temp = Math.round(((parseInt(json.days[0].temp) - 32) * 5) / 9);
       const description = json.days[0].description;
       const icon = json.days[0].icon;
