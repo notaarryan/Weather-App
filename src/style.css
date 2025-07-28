@@ -167,7 +167,7 @@ div#weather-app-card form {
 
 div#weather-app-card input#weather-input {
     width: 100%;
-    padding: 0.5rem 1rem 0.5rem 3rem;
+    padding: 0.5rem 3rem 0.5rem 1rem;
     border: none;
     border-radius: 30px;
     background-color: rgba(255, 255, 255, 0.15);
@@ -183,7 +183,7 @@ div#weather-app-card input#weather-input {
 
 div#weather-app-card button#search {
     position: absolute;
-    left: 0;
+    right: 0;
     border: none;
     width: 2rem;
     height: 2rem;
