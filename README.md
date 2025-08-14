@@ -48,5 +48,6 @@ Check out the live website here: [GitHub Pages link](https://notaarryan.github.i
 
 ## ✍️ Author
 
-Made by **[Aryan Parmar](https://www.linkedin.com/in/aryan-parmar-a0634b299/)**  
-🔗 [GitHub](https://github.com/notaarryan)
+Made by **[Aryan Parmar](https://www.linkedin.com/in/aryan-parmar-a0634b299/)**<br>
+🔗 **[GitHub](https://github.com/notaarryan)**<br>
+🔗 **[Repo Github Link](https://github.com/notaarryan/Weather-App)**
